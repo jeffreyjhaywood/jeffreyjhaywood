@@ -2,18 +2,56 @@ header {
     height: calc(100vh - 55px);
 }
 
+body {
+    height: 100%;
+    position: relative;
+  }
+
+footer {
+    color: #000000;
+    font-size: 40px;
+    background-color: #dae1e7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 #img-header {
     height: 100vh;
     width: 100vw;
 }
 
+#main {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+}
+
 .intro {
+    height: 100vh;
     text-align: center;
     padding-top: 20px;
 }
 
 #jeffrey-pic {
     height: 75vh;
-    border-radius: 5%;
+    border-radius: 10%;
     padding-top: 20px;
+}
+
+#job {
+    padding-top: 20px;
+}
+
+#experience {
+    padding-left: 20px;
 }
