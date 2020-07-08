@@ -1,148 +1,229 @@
 <!DOCTYPE html>
+
+<!--
+  Hyperspace by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) -->
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <title>Jeffrey J. Haywood</title>
+    <link rel="stylesheet" href="/public/assets/css/main.css">
+    <link rel="stylesheet" href="/public/assets/css/fontawesome-all.min.css">
+    <noscript>
+        <link rel="stylesheet" href="/public/assets/css/noscript.css">
+    </noscript>
 </head>
 
 <body>
-    <!-- Main content container -->
-    <section id="main">
-
-        <!-- Header Image -->
-        <header>
-            <img id="img-header" src="./resources/img/IMG_0226.jpeg" alt="">
-        </header>
-
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Jeffrey J. Haywood</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-link">|</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Industry Experience</a>
-                    </li>
-                    <li class="nav-link">|</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#intro">Jeffrey J. Haywood</a></li>
+                    <li><a href="#one">Industry Experience</a></li>
+                    <li><a href="#two">Personal Projects</a></li>
+                    <li><a href="#three">Get in touch</a></li>
                 </ul>
-                <span class="navbar-text">
-                    Not sure what to say :)
-                </span>
-            </div>
-        </nav>
-
-        <!-- Intro container -->
-        <div class="intro">
-            <h1>Hello World!</h1>
-            <h2>I am Jeffrey Haywood</h2>
-            <div class="about">
-                <img id="jeffrey-pic" src="./resources/img/IMG_0993.jpeg" alt="">
-            </div>
+            </nav>
         </div>
+    </section>
 
-        <!-- Industry experience container -->
-        <div class="experience">
-            <div class="job">
-                <h4>Zebra Technologies</h4>
-                <h5>Android Software Engineer Intern</h5>
-                <ul>
-                    <li>Developed feature for internal Android diagnostic tool using Java, taking extra steps to
-                        understand and add logic to lower-level C++ codebase.
-                    </li>
-                    <li>Modeled scalable JavaScript web application integrated within SharePoint, keeping
-                        edge/corner
-                        cases in mind.</li>
-                    <li>Debugged Java and C++ software using computational thinking/code tracing to quickly identify
-                        and
-                        solve issues.</li>
+    <!-- Wrapper-->
+    <div id="wrapper">
+        <!-- Intro-->
+        <section class="wrapper style1 fullscreen fade-up" id="intro">
+            <div class="inner"><img class="image right" src="/public/images/JeffreyMtFuji.jpg" />
+                <h1 style="margin-bottom: 0px">Jeffrey J. Haywood</h1>
+                <h4>Army Veteran / CIS Graduate / Software Developer</h4>
+                <p>I seek to apply my technical skills, passion for learning, adaptability, and attention to detail in
+                    the technology industry.</p>
+                <p>Being part of an innovating and diverse team working on solutions that help many is my goal.</p>
+                <ul class="actions">
+                    <li><a class="button scrolly" href="#one">View Experience</a></li>
                 </ul>
             </div>
-            <div class="job">
-                <h4>Farmingdale State College</h4>
-                <h5>Java/C++ Tutor</h5>
-                <ul>
-                    <li>Reinforced knowledge of object-oriented programming concepts in C++ and Java to students.</li>
-                    <li>Simplified complex material into language that is easy to understand utilizing visual aids to
-                        increase comprehension of in-depth problems.
-                    </li>
-                    <li>Guided students with constructive criticism about their projects to discover issues and
-                        solutions.</li>
-                </ul>
+        </section>
+
+        <!-- Job Experience -->
+        <section class="wrapper style2 spotlights" id="one">
+
+            <!-- Zebra -->
+            <section><a class="image" href="/views/zebra.html"><img src="/public/images/zebrapresentation1.jpg" alt=""
+                        data-position="center center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Zebra Technologies</h2>
+                        <h3>Software Engineer</h3>
+                        <p>Developed a feature for an internal Android application along side a companion JavaScript web
+                            application that was used to modify data of the Android app.</p>
+                        <ul class="actions">
+                            <li><a class="button" href="/views/zebra.html">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Farmingdale -->
+            <section style="flex-direction: row-reverse;"><a class="image" href="/views/farmingdale.html"><img
+                        src="/public/images/farmingdaleaward.jpg" alt="" data-position="top center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Farmingdale State College</h2>
+                        <h3>Java/C++ Tutor</h3>
+                        <p>Reinforced fundamental programming concepts in C++ and Java to groups of 10+ students.</p>
+                        <ul class="actions">
+                            <li><a class="button" href="/views/farmingdale.html">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FirstData -->
+            <section><a class="image" href="/views/firstdata.html"><img src="/public/images/fdgroup2.jpg" alt=""
+                        data-position="25% 25%" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>FirstData (Fiserv)</h2>
+                        <h3>Data Analyst</h3>
+                        <p>Utilized Tableau and SQL queries to sift through millions of data entries to find correlation
+                            between multiple variables.</p>
+                        <ul class="actions">
+                            <li><a class="button" href="/views/firstdata.html">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Army -->
+            <section style="flex-direction: row-reverse;"><a class="image" href="/views/army.html"><img
+                        src="/public/images/armyteam.jpg" alt="" data-position="25% 25%" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>United States Army</h2>
+                        <h3>Military Police Officer</h3>
+                        <p>Led a team of soldiers, making sure them and myself upheld the Army standards.</p>
+                        <ul class="actions">
+                            <li><a class="button" href="/views/army.html">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Personal Projects -->
+        <section class="wrapper style3 fade-up" id="two">
+            <div class="inner">
+                <h2>Personal Projects</h2>
+                <p>Here are some projects that I have worked on and currently working on in my free time ranging from
+                    open-source to private.<br>Open to constructive criticism! :)</p>
+                <div class="features">
+                    <section><span class="icon solid major brands fa-node-js"></span>
+                        <h3>VeteranTechOpps (WIP)</h3>
+                        <p>Node.js web application designed to help veterans easily track opportunities in the tech
+                            industry.</p>
+                        <ul class="actions">
+                            <li><a class="button" href="http://ec2-3-23-59-144.us-east-2.compute.amazonaws.com:3000/"
+                                    target="_blank">Check It Out</a></li>
+                        </ul>
+                    </section>
+                    <section><span class="icon solid major brands fa-java"></span>
+                        <h3>RuneLite Opensource Contribution</h3>
+                        <p>Added ability to search through database using abbreviations for third-party game client
+                            "RuneLite."</p>
+                        <ul class="actions">
+                            <li><a class="button"
+                                    href="https://github.com/jeffreyjhaywood/runelite/tree/jeffreyhaywood-fix-branch/runelite-client/src/main/java/net/runelite/client/plugins/grandexchange"
+                                    target="_blank">Check It Out</a></li>
+                        </ul>
+                    </section>
+                    <section><span class="icon solid major brands fa-android"></span>
+                        <h3>Pokémon Card Collecting App</h3>
+                        <p>Android application that uses REST API to search and view trading cards.</p>
+                        <ul class="actions">
+                            <li><a class="button">Download APK</a></li>
+                        </ul>
+                    </section>
+                    <section><span class="icon solid major fa-plus"></span>
+                        <h3>Much more to come!</h3>
+                        <p>My favorite way to learn is by doing, there will be much more coming!</p>
+                    </section>
+                </div>
             </div>
-            <div class="job">
-                <h4>Fiserv (Formerly FirstData)</h4>
-                <h5>Data Analyst Intern</h5>
-                <ul>
-                    <li>Generated interactive dashboards displaying $10+ billion of transaction information. Discovered
-                        correlations between data attributes that positively affected company revenue</li>
-                    <li>Led team through mobile application design, grasping and applying software development life
-                        cycle stages.</li>
-                    <li>Coordinated with engineering and program management teams to facilitate understanding of design
-                        requirements. Confirming new features are to be implemented based on specifications.</li>
-                </ul>
+        </section>
+
+        <section class="wrapper style1 fade-up" id="three">
+            <div class="inner">
+                <h2>Get in touch</h2>
+                <p>I am not currently looking for new opportunities, but if you would like to contact me feel free to do
+                    so! </p>
+                <p>(Send email feature not currently working.)</p>
+                <div class="split style1">
+                    <section>
+                        <form method="post" action="#">
+                            <div class="fields">
+                                <div class="field half"><label for="name">Name</label><input id="name" type="text"
+                                        name="name" /></div>
+                                <div class="field half"><label for="email">Email</label><input id="email" type="text"
+                                        name="email" /></div>
+                                <div class="field"><label for="message">Message</label><textarea id="message"
+                                        name="message" rows="5"></textarea></div>
+                            </div>
+                            <ul class="actions">
+                                <li><a class="button submit" href="/send-email">Send Message</a></li>
+                            </ul>
+                        </form>
+                    </section>
+                    <section>
+                        <ul class="contact">
+                            <li>
+                                <h3>Address</h3><span>Currently
+                                    Relocating:<br />&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;New York ->
+                                    Seattle<br />&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;USA</span>
+                            </li>
+                            <li>
+                                <h3>Email</h3><a href="mailto:jeffreyjhaywood@gmail.com"
+                                    target="_blank">jeffreyjhaywood@gmail.com</a>
+                            </li>
+                            <li>
+                                <h3>Social</h3>
+                                <ul class="icons">
+                                    <li><a class="icon brands fa-github" href="https://github.com/jeffreyjhaywood"
+                                            target="_blank"><span class="label">GitHub</span></a></li>
+                                    <li><a class="icon brands fa-linkedin-in"
+                                            href="https://www.linkedin.com/in/jeffreyhaywood/" target="_blank"><span
+                                                class="label">LinkedIn</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </div>
-            <div class="job">
-                <h4>United States Army</h4>
-                <h5>Military Police Officer</h5>
-                <ul>
-                    <li>Effectively collaborated with multiple teams, including high-ranking officials, joint task
-                        forces, and contractors, regularly pursued ways to improve communication and engagement.</li>
-                    <li>Adapted to stressful situations where calm, effective, and clear communication is key. Taking
-                        ownership of tasks and problems which often extended beyond scope of responsibility.</li>
-                    <li>Team leader: Oversaw the training, development, and welfare of four+ personnel.</li>
-                </ul>
-            </div>
+        </section>
+
+    </div>
+
+    <footer class="wrapper alt" id="footer">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Jeffrey J. Haywood. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
         </div>
-
-        <!-- Projets container -->
-        <div class="projects">
-
-        </div>
-
-        <footer>
-            <div>
-                <h3>Social</h3>
-                <a href="https://github.com/jeffreyjhaywood" target="_blank" rel="noopener noreferrer"
-                    class="fa fa-github"></a>
-
-                <a href="https://www.linkedin.com/in/jeffreyhaywood/" target="_blank" rel="noopener noreferrer"
-                    class="fa fa-linkedin"></a>
-            </div>
-
-            <div id="copyright">
-                Created By Jeffrey J. Haywood
-            </div>
-        </footer>
-
-    </section> <!-- End of Main container-->
-
+    </footer>
 </body>
 
-<!-- Bootstrap JavaScript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+<!-- Scripts-->
+<script src="/public/assets/js/jquery.min.js"></script>
+<script src="/public/assets/js/jquery.scrollex.min.js"></script>
+<script src="/public/assets/js/jquery.scrolly.min.js"></script>
+<script src="/public/assets/js/browser.min.js"></script>
+<script src="/public/assets/js/breakpoints.min.js"></script>
+<script src="/public/assets/js/util.js"></script>
+<script src="/public/assets/js/main.js"></script>
 
 </html>
